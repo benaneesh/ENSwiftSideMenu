@@ -83,6 +83,7 @@ public class ENSideMenu : NSObject {
     public var bouncingEnabled :Bool = true
     private let sideMenuContainerView =  UIView()
     private var menuTableViewController : UITableViewController!
+    private var sideViewController : UIViewController!
     private var animator : UIDynamicAnimator!
     private let sourceView : UIView!
     private var needUpdateApperance : Bool = false
@@ -123,6 +124,14 @@ public class ENSideMenu : NSObject {
         self.menuTableViewController.tableView.frame = sideMenuContainerView.bounds
         self.menuTableViewController.tableView.autoresizingMask = .FlexibleHeight | .FlexibleWidth
         sideMenuContainerView.addSubview(self.menuTableViewController.tableView)
+    }
+    
+    public convenience init(sourceView: UIView, sideViewController: UIViewController, menuPosition: ENSideMenuPosition) {
+        self.init(sourceView: sourceView, menuPosition: menuPosition)
+        self.sideViewController = sideViewController
+        self.sideViewController.view.frame = sideMenuContainerView.bounds
+        self.sideViewController.view.autoresizingMask = .FlexibleHeight | .FlexibleWidth
+        sideMenuContainerView.addSubview(self.sideViewController.view)
     }
     
     private func updateFrame() {

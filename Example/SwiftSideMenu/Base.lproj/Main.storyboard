@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xKr-44-F3h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xKr-44-F3h">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--SwiftSideMenu-->
@@ -74,6 +74,7 @@
                             <constraint firstAttribute="centerY" secondItem="c9j-pg-AvJ" secondAttribute="centerY" id="sEd-le-mVy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9HT-tU-4Z0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZc-WY-K2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,6 +105,7 @@
                             <constraint firstAttribute="centerX" secondItem="Qkq-oV-QWk" secondAttribute="centerX" id="r58-JR-v5Z"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Mi2-I3-dIu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdQ-Jr-QE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -151,6 +153,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzB-Yr-ZHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="685" y="716"/>
+        </scene>
+        <!--Side View Controller-->
+        <scene sceneID="LwJ-Ff-uGS">
+            <objects>
+                <viewController storyboardIdentifier="sideMenu" id="akK-yT-RCr" customClass="SideViewController" customModule="SwiftSideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z6v-V7-ZlF"/>
+                        <viewControllerLayoutGuide type="bottom" id="qtf-tf-lZy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tJA-4P-K0S">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZh-3a-SpB">
+                                <rect key="frame" x="38" y="68" width="113" height="30"/>
+                                <state key="normal" title="ViewController 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToController2:" destination="akK-yT-RCr" eventType="touchUpInside" id="GUm-0B-NgH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdX-Ia-Ta7">
+                                <rect key="frame" x="38" y="122" width="113" height="30"/>
+                                <state key="normal" title="ViewController 3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToController3:" destination="akK-yT-RCr" eventType="touchUpInside" id="pFR-vJ-e7A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsW-yP-5ai">
+                                <rect key="frame" x="38" y="175" width="113" height="30"/>
+                                <state key="normal" title="ViewController 4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToController4:" destination="akK-yT-RCr" eventType="touchUpInside" id="Gzn-6d-UAb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nnb-j2-QKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1472" y="49"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="I6g-lx-NHl">

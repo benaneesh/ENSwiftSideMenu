@@ -17,6 +17,7 @@
 		5C13259C198E2A9A00CA49BE /* SwiftSideMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13259B198E2A9A00CA49BE /* SwiftSideMenuTests.swift */; };
 		5C1325AA198E2AB300CA49BE /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1325A7198E2AB300CA49BE /* image.png */; };
 		9E4766FC19DDBCE900FCEACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C13258C198E2A9A00CA49BE /* Main.storyboard */; };
+		FB5049DB1A3B9EBC00D4B0F3 /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5049DA1A3B9EBC00D4B0F3 /* SideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		5C13259A198E2A9A00CA49BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C13259B198E2A9A00CA49BE /* SwiftSideMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSideMenuTests.swift; sourceTree = "<group>"; };
 		5C1325A7198E2AB300CA49BE /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		FB5049DA1A3B9EBC00D4B0F3 /* SideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				1429139219DA9F4D0025188A /* MyNavigationController.swift */,
 				1429137C19D97A4F0025188A /* MyMenuTableViewController.swift */,
 				5C13258A198E2A9A00CA49BE /* ViewController.swift */,
+				FB5049DA1A3B9EBC00D4B0F3 /* SideViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				14EAB63D19DD4E95006A90FC /* ENSideMenu.swift in Sources */,
 				1429139319DA9F4D0025188A /* MyNavigationController.swift in Sources */,
 				5C132589198E2A9A00CA49BE /* AppDelegate.swift in Sources */,
+				FB5049DB1A3B9EBC00D4B0F3 /* SideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

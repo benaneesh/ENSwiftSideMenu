@@ -1,6 +1,17 @@
 ENSwiftSideMenu
 ===============
 
+Fork of https://github.com/evnaz/ENSwiftSideMenu but now with UIViewControllers as a side menu.
+
+eg:
+```swift
+  override func viewDidLoad() {
+        super.viewDidLoad()
+        sideMenu = ENSideMenu(sourceView: self.view, menuTableViewController: MySideViewController(), menuPosition:.Left)
+    }
+```
+
+
 A simple side menu for iOS 7/8 written in Swift. Using the UIDynamic framework, UIGestures and UIBlurEffect.
 
 ##Demo
