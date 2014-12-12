@@ -29,6 +29,18 @@ class ENSideMenuNavigationController: UINavigationController, ENSideMenuProtocol
         sideMenu = ENSideMenu(sourceView: self.view, menuTableViewController: menuTableViewController, menuPosition:.Left)
         view.bringSubviewToFront(navigationBar)
     }
+    
+    init( menuViewController: UIViewController, contentViewController: UIViewController?) {
+        super.init(nibName: nil, bundle: nil)
+        
+        if (contentViewController != nil) {
+            self.viewControllers = [contentViewController!]
+        }
+        
+        sideMenu = ENSideMenu(sourceView: self.view, sideViewController: menuViewController, menuPosition: .Left)
+        view.bringSubviewToFront(navigationBar)
+    }
+    
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
